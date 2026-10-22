@@ -1,4 +1,4 @@
-# MBBS Survival Simulator v2.1
+# MBBS Survival Simulator v2.2
 
 A responsive, pixel-inspired decision RPG about surviving medical college. Built with vanilla HTML, CSS and JavaScript: no bundler, framework or package install required.
 
@@ -14,6 +14,8 @@ A responsive, pixel-inspired decision RPG about surviving medical college. Built
 - Six destinations: Medical College, Hostel, Chai Canteen, Library, Hospital Ward and Viva Arena.
 - Sanity, energy, knowledge, attendance, cash, reputation, XP, levels and inventory.
 - Field journal, auto-save, sound toggle, random encounters and character movement.
+- Export/restore local save files for manual backup and transfer between devices.
+- No paid APIs, subscriptions, build tools, or third-party runtime dependencies; fonts use local system fallbacks. Hosting is available at no cost through GitHub Pages, subject to GitHub's limits.
 - **Daily objectives and 10 achievements**, persisted separately from the campaign save.
 - **Knowledge Challenge:** short original preclinical revision questions with instant explanations and in-game rewards.
 - Keyboard, mouse and touch controls, including an on-screen directional pad.
@@ -42,7 +44,7 @@ A responsive, pixel-inspired decision RPG about surviving medical college. Built
 
 ## Offline / installable app
 
-The app registers `service-worker.js` on HTTPS or localhost. Static files are cached after a successful first visit. The save uses browser localStorage and remains on that browser/device; clearing site data removes it. The service worker cannot cache Google Fonts reliably offline, so system monospace fallbacks are included.
+The app registers `service-worker.js` on HTTPS or localhost. Static files are cached after a successful first visit. The save uses browser localStorage and remains on that browser/device; clearing site data removes it. The game uses local system fonts and does not need third-party requests to run.
 
 ## Project layout
 
