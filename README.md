@@ -1,60 +1,73 @@
-# MBBS Survival Simulator v2
+# MBBS Survival Simulator v2.1
 
-A browser-based, decision-driven medical-college survival RPG built with vanilla HTML, CSS, and JavaScript. Features pixel-inspired scenes, six destinations, branching choices, stat consequences, XP and levels, inventory, a field journal, optional sound, keyboard/touch controls, browser autosave, and multiple endings.
+A responsive, pixel-inspired decision RPG about surviving medical college. Built with vanilla HTML, CSS and JavaScript: no bundler, framework or package install required.
 
-## Play locally
+## Play
 
-1. Clone or download this repository.
-2. Open `index.html` in a modern browser. No build step or package manager is needed.
-3. Choose an option with the on-screen buttons or press **1–4**.
-4. Travel with the destination buttons or **Q / W / E / R / T / Y**.
-5. Press **J** for your field journal. Use **Esc** to close dialogs.
+- **Live site (after enabling Pages):** https://shreebalaji767.github.io/MBBS-Survival-Simulator/
+- **Local:** download/clone the repository and open `index.html`.
+- For service-worker/offline testing locally, use a local HTTP server (for example `python -m http.server 8080`) rather than opening the file directly.
 
-Progress is saved in localStorage on that browser and device. Clearing browser site data removes the save.
+## Features
 
-## Gameplay
+- 30-day campaign, multiple endings and choices with meaningful stat changes.
+- Six destinations: Medical College, Hostel, Chai Canteen, Library, Hospital Ward and Viva Arena.
+- Sanity, energy, knowledge, attendance, cash, reputation, XP, levels and inventory.
+- Field journal, auto-save, sound toggle, random encounters and character movement.
+- **Daily objectives and 10 achievements**, persisted separately from the campaign save.
+- **Knowledge Challenge:** short original preclinical revision questions with instant explanations and in-game rewards.
+- Keyboard, mouse and touch controls, including an on-screen directional pad.
+- Larger-text and high-contrast accessibility options.
+- Installable Progressive Web App (PWA), service-worker caching and offline launch after the first successful load.
+- GitHub Actions syntax and static-file checks.
+- Fictional entertainment only; not medical advice or a substitute for supervised clinical education.
 
-- **Campaign:** 30 in-game days, three decisions per day.
-- **Stats:** sanity, energy, knowledge, attendance, cash, reputation, XP and level.
-- **Locations:** Medical College, Hostel Room, Chai Canteen, Central Library, Hospital Ward and Viva Arena.
-- **Endings:** Legendary Intern, Chai-Powered Genius, Barely Passed, Attendance Disaster, burnout warning, exhaustion and other survival outcomes.
-- **Controls:** mouse/touch and keyboard. Sound effects are optional and off by default.
-- **Clinical ethics:** the game encourages honesty about what you know and what you have assessed. It is fictional entertainment, not medical advice or a substitute for clinical training.
+## Controls
 
-## Deploy with GitHub Pages
+| Input | Action |
+|---|---|
+| `1–4` | Choose an event decision |
+| `Q W E R T Y` | Travel to a destination |
+| Arrow keys | Move the character around the scene |
+| On-screen D-pad | Touch movement |
+| `J` | Open field journal |
+| `Esc` | Close an open dialog |
 
-1. Open **Settings → Pages** in this repository.
-2. Under **Build and deployment**, choose **Deploy from a branch**.
-3. Select branch **main** and folder **/(root)**, then save.
-4. Wait for the Pages deployment to finish. The expected URL is:
+## GitHub Pages deployment
 
-   https://shreebalaji767.github.io/MBBS-Survival-Simulator/
+1. Open repository **Settings → Pages**.
+2. Choose **Deploy from a branch**.
+3. Select branch **main**, folder **/(root)** and save.
+4. Wait for GitHub Pages to publish at the URL above.
 
-## Project structure
+## Offline / installable app
+
+The app registers `service-worker.js` on HTTPS or localhost. Static files are cached after a successful first visit. The save uses browser localStorage and remains on that browser/device; clearing site data removes it. The service worker cannot cache Google Fonts reliably offline, so system monospace fallbacks are included.
+
+## Project layout
 
 ```
-MBBS-Survival-Simulator/
+.
 ├── index.html
+├── manifest.json
+├── service-worker.js
+├── assets/icon.svg
+├── styles/main.css
+├── styles/upgrade.css
+├── src/game.js
+├── src/upgrade.js
+├── tests/smoke-test.js
+├── .github/workflows/static-check.yml
 ├── README.md
-├── LICENSE
-├── .nojekyll
-├── styles/
-│   └── main.css
-├── src/
-│   └── game.js
-└── assets/
-    └── images/
-        └── README.md
+└── LICENSE
 ```
-
-The pixel-inspired campus is rendered with CSS; no image downloads or JavaScript libraries are required. Google Fonts enhance the pixel aesthetic when online, with monospace fallbacks available.
 
 ## Customize
 
-- Add encounters to the `events` array in `src/game.js`.
-- Edit starting values in `fresh()`.
-- Add destinations in `places` and update scene palettes there.
-- Adjust layout, palette, and responsive styles in `styles/main.css`.
+- Add event content to `events` in `src/game.js`.
+- Add knowledge challenge questions and achievements in `src/upgrade.js`.
+- Tune visuals in `styles/main.css` and `styles/upgrade.css`.
+- Adjust cached static paths in `service-worker.js` when adding new core files.
 
 ## License
 
