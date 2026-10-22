@@ -8,3 +8,6 @@
 
 /* v3.2 game modes, timer and boss round */
 .mode-panel{margin-bottom:12px;padding:14px}.mode-controls{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px;margin-top:12px}.mode-controls label{display:grid;gap:6px;color:var(--muted);font-size:13px;letter-spacing:.06em}.mode-controls select{width:100%;min-height:44px;padding:10px;background:#111827;color:var(--text);border:1px solid var(--line);border-radius:4px;font:inherit;font-size:15px}.mode-controls button{grid-column:1/-1;margin:0;min-height:44px}.round-hud{margin-top:10px;padding:8px 10px;border:1px dashed var(--line);color:var(--lime);font-size:13px;letter-spacing:.06em}.question-clock{font-weight:bold;color:var(--yellow);padding:4px 8px;border:1px solid currentColor;border-radius:3px}.question-clock.urgent{color:#ff6b7c;animation:clock-pulse .5s steps(2,end) infinite}@keyframes clock-pulse{50%{opacity:.45}}@media(max-width:600px){.mode-controls{grid-template-columns:1fr}.mode-controls button{grid-column:auto}}
+
+/* v3.3 clinical case lab */
+.case-lab-modal .quiz-question{font-size:21px}.case-lab-modal .daily-status h3{margin-top:18px;color:var(--lime)}#case-lab-content .quiz-option{line-height:1.4}#case-lab-feedback{line-height:1.5;margin:10px 0}.daily-status p{overflow-wrap:anywhere}
