@@ -1,4 +1,4 @@
-# MBBS Survival Simulator v3.0
+# MBBS Survival Simulator v3.1
 
 A free, text-first, absurd medical question-and-answer chaos game. Each question has four answers, a short explanation, and silly consequences. Built with vanilla HTML, CSS and JavaScript: no bundler, framework or package install required.
 
@@ -10,9 +10,9 @@ A free, text-first, absurd medical question-and-answer chaos game. Each question
 
 ## Features
 
-- 41 original medical questions with four multiple-choice answers, absurd distractors, and short educational explanations.
+- 140+ original medical questions with four multiple-choice answers, absurd distractors, and short educational explanations.
 - No repeated question within a browser session, including after starting a new run or refreshing; a fresh browser session starts a new question pool.
-- Correct answers build knowledge and XP; wrong answers trigger silly chaos and sanity consequences.
+- Correct answers build knowledge and XP; wrong answers trigger silly chaos and sanity consequences. Consecutive correct answers earn combo bonuses. The 50/50 Chaos Cutter removes two wrong options once per browser session; the absurd dice can grant sanity, grant energy, or tax your sanity.
 - Campaign stats, levels, field journal, local autosave, sound toggle, and multiple endings.
 - Save export/import so progress can be backed up or moved to another device.
 - Free local-first setup: no paid APIs, subscriptions, build tools, or third-party runtime dependencies. GitHub Pages offers free static hosting within GitHub's usage limits.
@@ -29,7 +29,7 @@ A free, text-first, absurd medical question-and-answer chaos game. Each question
 | Input | Action |
 |---|---|
 | `1–4` | Choose an event decision |
-| `Q W E R T Y` | Travel to a destination |
+| `Q W E R T Y` | Legacy keys (travel disabled in quiz mode) |
 | Arrow keys | Move the character around the scene |
 | On-screen D-pad | Touch movement |
 | `J` | Open field journal |
