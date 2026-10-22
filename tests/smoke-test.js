@@ -10,7 +10,7 @@ for(const term of ["sanity","energy","knowledge","attendance","reputation","loca
 for(const term of ["DAILY KNOWLEDGE CHALLENGE","ACHIEVEMENTS"])assert.ok(html.includes(term),"missing upgrade UI "+term);
 for(const term of ["beforeinstallprompt","serviceWorker","high-contrast","large-text","quizCorrect","function answer","function renderDailyChallenge","function todayKey","function exportSave","function importSave"])assert.ok(upgrades.includes(term),"missing upgrade mechanic "+term);
 assert.ok(css.includes(".dpad")&&css.includes(".objectives")&&css.includes(".daily-status"),"missing upgrade styles");
-assert.ok(html.includes("V3.0") && html.includes('id="challenge-status"'),"missing v2.3 daily challenge status");
+assert.ok(html.includes("V3.2") && html.includes('id="challenge-status"'),"missing v2.3 daily challenge status");
 assert.ok(game.includes("!seen.includes(e.id)") && game.includes("sessionStorage.setItem(SESSION_SEEN_KEY"),"questions can repeat within a session");
 assert.ok(css.includes(".scene,.travel{display:none!important}"),"legacy visual game UI should be hidden");
 assert.ok(game.includes("function subjectOf")&&game.includes("function applyQuizMode"),"missing subject and mode mechanics");
