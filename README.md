@@ -10,7 +10,7 @@ A free, text-first, absurd medical question-and-answer chaos game. Each question
 
 ## Features
 
-- 40 original medical questions with four multiple-choice answers, absurd distractors, and short educational explanations.
+- 41 original medical questions with four multiple-choice answers, absurd distractors, and short educational explanations.
 - No repeated question within a browser session, including after starting a new run or refreshing; a fresh browser session starts a new question pool.
 - Correct answers build knowledge and XP; wrong answers trigger silly chaos and sanity consequences.
 - Campaign stats, levels, field journal, local autosave, sound toggle, and multiple endings.
