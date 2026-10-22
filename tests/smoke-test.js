@@ -1,0 +1,12 @@
+const fs=require("node:fs");
+const assert=require("node:assert/strict");
+const html=fs.readFileSync("index.html","utf8");
+const game=fs.readFileSync("src/game.js","utf8");
+const upgrades=fs.readFileSync("src/upgrade.js","utf8");
+const css=fs.readFileSync("styles/upgrade.css","utf8");
+for(const path of ["styles/main.css","styles/upgrade.css","src/game.js","src/upgrade.js","manifest.json","service-worker.js","assets/icon.svg"])assert.ok(fs.existsSync(path),"missing "+path);
+for(const id of ["stats","choices","locations","journalmodal","ending","challenge-modal","achievements-modal","objectives","dpad"])assert.ok(html.includes('id="'+id+'"'),"missing UI id "+id);
+for(const term of ["sanity","energy","knowledge","attendance","reputation","localStorage","function decide","function travel"])assert.ok(game.toLowerCase().includes(term.toLowerCase()),"missing game mechanic "+term);
+for(const term of ["DAILY KNOWLEDGE CHALLENGE","ACHIEVEMENT CABINET","beforeinstallprompt","serviceWorker","high-contrast","large-text"])assert.ok(upgrades.includes(term)||upgrades.includes(term.toLowerCase()),"missing upgrade "+term);
+assert.ok(css.includes(".dpad")&&css.includes(".objectives"),"missing upgrade styles");
+console.log("Smoke checks passed: required files, UI hooks, core mechanics, upgrades and responsive controls.");
