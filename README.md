@@ -1,6 +1,6 @@
-# MBBS Survival Simulator v2.3
+# MBBS Survival Simulator v3.0
 
-A responsive, pixel-inspired decision RPG about surviving medical college. Built with vanilla HTML, CSS and JavaScript: no bundler, framework or package install required.
+A free, text-first, absurd medical question-and-answer chaos game. Each question has four answers, a short explanation, and silly consequences. Built with vanilla HTML, CSS and JavaScript: no bundler, framework or package install required.
 
 ## Play
 
@@ -10,10 +10,10 @@ A responsive, pixel-inspired decision RPG about surviving medical college. Built
 
 ## Features
 
-- 30-day campaign, multiple endings and choices with meaningful stat changes.
-- Six destinations: Medical College, Hostel, Chai Canteen, Library, Hospital Ward and Viva Arena.
-- Sanity, energy, knowledge, attendance, cash, reputation, XP, levels and inventory.
-- Field journal, auto-save, sound toggle, random encounters and character movement.
+- 40 original medical questions with four multiple-choice answers, absurd distractors, and short educational explanations.
+- No repeated question within a browser session, including after starting a new run or refreshing; a fresh browser session starts a new question pool.
+- Correct answers build knowledge and XP; wrong answers trigger silly chaos and sanity consequences.
+- Campaign stats, levels, field journal, local autosave, sound toggle, and multiple endings.
 - Save export/import so progress can be backed up or moved to another device.
 - Free local-first setup: no paid APIs, subscriptions, build tools, or third-party runtime dependencies. GitHub Pages offers free static hosting within GitHub's usage limits.
 - **Daily objectives and 10 achievements**, persisted separately from the campaign save.
@@ -66,7 +66,7 @@ The app registers `service-worker.js` on HTTPS or localhost. Static files are ca
 
 ## Customize
 
-- Add event content to `events` in `src/game.js`.
+- Add question content to `questionBank` in `src/game.js`.
 - Add knowledge challenge questions and achievements in `src/upgrade.js`.
 - Tune visuals in `styles/main.css` and `styles/upgrade.css`.
 - Adjust cached static paths in `service-worker.js` when adding new core files.
