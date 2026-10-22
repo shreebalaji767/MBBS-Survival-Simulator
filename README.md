@@ -14,6 +14,8 @@ A responsive, pixel-inspired decision RPG about surviving medical college. Built
 - Six destinations: Medical College, Hostel, Chai Canteen, Library, Hospital Ward and Viva Arena.
 - Sanity, energy, knowledge, attendance, cash, reputation, XP, levels and inventory.
 - Field journal, auto-save, sound toggle, random encounters and character movement.
+- Save export/import so progress can be backed up or moved to another device.
+- Free local-first setup: no paid APIs, subscriptions, build tools, or third-party runtime dependencies. GitHub Pages offers free static hosting within GitHub's usage limits.
 - Export/restore local save files for manual backup and transfer between devices.
 - No paid APIs, subscriptions, build tools, or third-party runtime dependencies; fonts use local system fallbacks. Hosting is available at no cost through GitHub Pages, subject to GitHub's limits.
 - **Daily objectives and 10 achievements**, persisted separately from the campaign save.
