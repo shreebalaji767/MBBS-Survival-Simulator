@@ -17,6 +17,7 @@ jobs:
           node --check src/game.js
           node --check src/upgrade.js
           node --check service-worker.js
+          node tests/smoke-test.js
       - name: Check required app files
         run: |
           test -f index.html
