@@ -1,4 +1,4 @@
-# MBBS Survival Simulator v2.2
+# MBBS Survival Simulator v2.3
 
 A responsive, pixel-inspired decision RPG about surviving medical college. Built with vanilla HTML, CSS and JavaScript: no bundler, framework or package install required.
 
@@ -16,10 +16,8 @@ A responsive, pixel-inspired decision RPG about surviving medical college. Built
 - Field journal, auto-save, sound toggle, random encounters and character movement.
 - Save export/import so progress can be backed up or moved to another device.
 - Free local-first setup: no paid APIs, subscriptions, build tools, or third-party runtime dependencies. GitHub Pages offers free static hosting within GitHub's usage limits.
-- Export/restore local save files for manual backup and transfer between devices.
-- No paid APIs, subscriptions, build tools, or third-party runtime dependencies; fonts use local system fallbacks. Hosting is available at no cost through GitHub Pages, subject to GitHub's limits.
 - **Daily objectives and 10 achievements**, persisted separately from the campaign save.
-- **Knowledge Challenge:** short original preclinical revision questions with instant explanations and in-game rewards.
+- **Daily Knowledge Challenge:** one reward attempt per local calendar day, a consistent question of the day, explanations, and a consecutive-day streak.
 - Keyboard, mouse and touch controls, including an on-screen directional pad.
 - Larger-text and high-contrast accessibility options.
 - Installable Progressive Web App (PWA), service-worker caching and offline launch after the first successful load.
