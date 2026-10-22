@@ -8,6 +8,8 @@ for(const path of ["styles/main.css","styles/upgrade.css","src/game.js","src/upg
 for(const id of ["stats","choices","locations","journalmodal","ending","challenge-modal","achievements-modal","objectives","dpad","export-save","import-save","import-file"])assert.ok(html.includes('id="'+id+'"'),"missing UI id "+id);
 for(const term of ["sanity","energy","knowledge","attendance","reputation","localStorage","function decide","function travel"])assert.ok(game.toLowerCase().includes(term.toLowerCase()),"missing game mechanic "+term);
 for(const term of ["DAILY KNOWLEDGE CHALLENGE","ACHIEVEMENTS"])assert.ok(html.includes(term),"missing upgrade UI "+term);
-for(const term of ["beforeinstallprompt","serviceWorker","high-contrast","large-text","quizCorrect","function answer","function exportSave","function importSave"])assert.ok(upgrades.includes(term),"missing upgrade mechanic "+term);
-assert.ok(css.includes(".dpad")&&css.includes(".objectives"),"missing upgrade styles");
+for(const term of ["beforeinstallprompt","serviceWorker","high-contrast","large-text","quizCorrect","function answer","function renderDailyChallenge","function todayKey","function exportSave","function importSave"])assert.ok(upgrades.includes(term),"missing upgrade mechanic "+term);
+assert.ok(css.includes(".dpad")&&css.includes(".objectives")&&css.includes(".daily-status"),"missing upgrade styles");
+assert.ok(html.includes("V2.3") && html.includes('id="challenge-status"'),"missing v2.3 daily challenge status");
+assert.ok(upgrades.includes("meta.quizDate===todayKey()") && upgrades.includes("isYesterday(meta.quizLastDate)"),"missing once-per-day challenge and streak logic");
 console.log("Smoke checks passed: required files, UI hooks, core mechanics, upgrades and responsive controls.");
