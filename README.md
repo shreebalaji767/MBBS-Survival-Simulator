@@ -1,4 +1,4 @@
-# MBBS Survival Simulator v3.1
+# MBBS Survival Simulator v3.2
 
 A free, text-first, absurd medical question-and-answer chaos game. Each question has four answers, a short explanation, and silly consequences. Built with vanilla HTML, CSS and JavaScript: no bundler, framework or package install required.
 
@@ -10,9 +10,12 @@ A free, text-first, absurd medical question-and-answer chaos game. Each question
 
 ## Features
 
-- 140+ original medical questions with four multiple-choice answers, absurd distractors, and short educational explanations.
+- 167+ original medical questions with four multiple-choice answers, absurd distractors, and short educational explanations.
 - No repeated question within a browser session, including after starting a new run or refreshing; a fresh browser session starts a new question pool.
 - Correct answers build knowledge and XP; wrong answers trigger silly chaos and sanity consequences. Consecutive correct answers earn combo bonuses. The 50/50 Chaos Cutter removes two wrong options once per browser session; the absurd dice can grant sanity, grant energy, or tax your sanity.
+- **Three game modes:** Classic Chaos, 20-second Blitz, and a 10-question Sprint.
+- **Subject rounds:** filter the bank into Anatomy, Physiology, Biochemistry, Microbiology & Immunology, Pharmacology, Pathology, Clinical Basics, Community Medicine, or Mixed Bag.
+- **Boss questions:** every fifth question increases the stakes; correct answers earn a bonus, wrong answers cost extra sanity.
 - Campaign stats, levels, field journal, local autosave, sound toggle, and multiple endings.
 - Save export/import so progress can be backed up or moved to another device.
 - Free local-first setup: no paid APIs, subscriptions, build tools, or third-party runtime dependencies. GitHub Pages offers free static hosting within GitHub's usage limits.
