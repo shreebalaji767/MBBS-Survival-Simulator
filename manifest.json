@@ -1,0 +1,11 @@
+{
+  "name": "MBBS Survival Simulator",
+  "short_name": "MBBS Survival",
+  "description": "A pixel-inspired medical college survival RPG.",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#101521",
+  "theme_color": "#101521",
+  "icons": [{"src":"assets/icon.svg","sizes":"any","type":"image/svg+xml","purpose":"any maskable"}]
+}
